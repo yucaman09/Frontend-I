@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+
+#header1 {
+  background-color: #1cd1b0;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+}
+#header2 {
+  background-color: #00669f;
+  font-weight: bold;
+  padding: 28px;
+  font-size: 40px;
+  box-shadow: 0 10px 7px 0 rgb(0 0 0 / 25%);
+}
+
+.titleCard {
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.paragraphCard {
+  position: absolute;
+  bottom: 10vh;
+  margin: 0px 15px;
+}
+
+.iconHeart {
+  color: red;
+  position: absolute;
+  font-size: 30px;
+  left: 2vh;
+  top: 2vh;
+}
+
+.container-cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.formImg {
+  position: absolute;
+  border-radius: 50%;
+  left: 9.5vh;
+  top: 13vh;
+}
+
+.cards {
+  position: relative;
+  width: 300px;
+  height: 529px;
+  margin: 0px 15px;
+  background-color: rgba(243, 243, 243, 1);
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+}
+
+
+.button {
+  background-color: #00669f;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  color: white;
+  padding: 15px 37px;
+  position: absolute;
+  bottom: 3vh;
+  right: 9vh;
+}
+
+footer {
+  background-color: #00669f;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+
+
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+}
