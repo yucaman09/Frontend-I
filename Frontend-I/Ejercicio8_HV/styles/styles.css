@@ -1,0 +1,87 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Yusei Magic", sans-serif;
+}
+
+/* Header */
+#portada {
+  align-items: center;
+  background-image: url("/img/PortadaNavidad.jpeg");
+  background-size: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#profile {
+  border-radius: 50%;
+  height: 250px;
+  object-fit: cover;
+  width: 250px;
+}
+
+.title {
+  align-items: center;
+  background-color: rgba(220, 220, 220);
+  display: flex;
+  justify-content: center;
+  padding: 7px 0px;
+  width: 100vw;
+}
+
+.aboutMe {
+  position: relative;
+}
+
+#aboutMeIcon {
+  position: absolute;
+  left: 14px;
+  font-size: 25px;
+  color: black;
+}
+/* Header */
+
+/* Section */
+.info li {
+  margin: 20px 30px;
+  line-height: 45px;
+}
+
+.container {
+  text-align: justify;
+  margin: 20px 30px;
+}
+
+/* Section */
+
+/* Footer */
+
+.footer {
+  background-color: rgba(220, 220, 220);
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+}
+
+.redes li {
+  display: inline-block;
+}
+
+#facebook {
+  color: blue;
+}
+#twitter {
+  color: #00c4ff;
+}
+#instagram {
+  color: #e22b99;
+}
+#github {
+  color: #000000;
+}
+/* Footer */
