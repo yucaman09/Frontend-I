@@ -6,26 +6,23 @@
 }
 
 header {
-  z-index: 10;
   position: fixed;
   width: 100vw;
-  top: 0px;
-  right: 0px;
-  left: 0px;
+  z-index: 10;
 }
 
 #header1 {
   background-color: #1cd1b0;
-  font-weight: bold;
-  padding: 10px;
   font-size: 15px;
+  font-weight: 400;
+  padding: 10px;
 }
 #header2 {
   background-color: #00669f;
-  font-weight: bold;
-  padding: 28px;
-  font-size: 40px;
   box-shadow: 0 10px 7px 0 rgb(0 0 0 / 25%);
+  font-size: 40px;
+  font-weight: 400;
+  padding: 28px;
 }
 
 .titleCard {
@@ -35,53 +32,62 @@ header {
 }
 
 .paragraphCard {
-  position: absolute;
-  bottom: 10vh;
-  margin: 0px 15px;
+  margin: 10px;
 }
 
 .iconHeart {
   color: red;
-  position: absolute;
   font-size: 30px;
-  left: 2vh;
-  top: 2vh;
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 
 .container-cards {
   display: flex;
   flex-flow: wrap;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   height: 100vh;
   width: 100vw;
 }
 
 .formImg {
-  position: absolute;
   border-radius: 50%;
-  left: 9.5vh;
-  top: 13vh;
+  position: absolute;
+  left: 90px;
+  top: 133px;
 }
 
 .cards {
-  position: relative;
-  width: 300px;
-  height: 529px;
-  margin: 0px 15px;
   background-color: rgba(243, 243, 243, 1);
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.cards-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 337px;
+}
 
 .button {
   background-color: #00669f;
   box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
-  color: white;
   padding: 15px 37px;
   position: absolute;
-  bottom: 3vh;
-  right: 9vh;
+  bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 footer {
@@ -90,7 +96,6 @@ footer {
   color: white;
   font-size: 16px;
   text-align: center;
-
 
   z-index: 10;
   position: fixed;
