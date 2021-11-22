@@ -9,22 +9,24 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
+        <!-- Header en negro -->
         <div class="container-header">
             <p class="title-header">Grandes ofertas en comederos</p>
             <div class="lang-header">
                 <p>Español</p>
                 <embed class="select-icon" src="./img/arrowDown.svg">
-                <p class="separeted">ARG$</p>
+                <p class="separeted-currency">ARG$</p>
                 <embed class="select-icon" src="./img/arrowDown.svg">
             </div>
         </div>
 
+        <!-- Header en amarillo -->
         <div class="container-header-2">
             <img src="./img/Logo.png" alt="LogoPetShop">
             <ul id="nav-main">
@@ -38,10 +40,10 @@
                 <li>Contactanos</li>
             </ul>
         </div>
-
     </header>
 
     <main>
+        <!-- Fondo principal -->
         <div id="main-wallpaper">
             <div id="main-container-title">
                 <h1 id="title">¡Es un placer tenerte aquí!</h1>
@@ -50,6 +52,7 @@
             </div>
         </div>
 
+        <!-- Productos destacados -->
         <div class="main-container-featured">
             <img id="paw" src="./img/pawprint.png" alt="Paw">
             <h1 id="title-featured">Productos Destacados</h1>
@@ -62,6 +65,7 @@
             </ul>
         </div>
 
+        <!-- Articulos en venta -->
         <div class="container-cards">
             <div id="card1">
                 <p>Juguete Churrasquito</p>
@@ -76,45 +80,64 @@
                 <p class="cards-price">$650</p>
             </div>
         </div>
-
     </main>
 
-    <form action="">
-        <h2>Contáctanos</h2>
-        <input type="text" placeholder="Nombre y Apellido">
-        <input type="text" placeholder="Ingresa tu correo electrónico">
-        <input type="text" placeholder="Teléfono">
-        <button>Resetear</button>
-        <button>Enviar</button>
-    </form>
-
-    <section>
+    <!-- Formulario contactanos -->
+    <section class="container-contact-us">
+        <h2 class="contact-us">Contáctanos</h2>
+        <input class="input-contact" type="text" placeholder="Nombre y Apellido">
+        <input class="input-contact" type="text" placeholder="Ingresa tu correo electrónico">
+        <input class="input-contact" type="text" placeholder="Teléfono">
         <div>
-            <img src="./img/Group.png" alt="Subscribe">
-            <span>Suscríbete para más novedades</span>
-            <input type="text" placeholder="Ingresa tu correo electronico">
-            <button>Suscribirme</button>
+            <button class="buttonForm-reset">Resetear</button>
+            <button class="buttonForm-send">Enviar</button>
         </div>
     </section>
 
-    <footer>
-        <div>
-            <img src="./img/Icono.png" alt="Location">
-            <h2>Localidad</h2>
-            <p>Calle - provincia</p>
+    <!-- Suscribete -->
+    <section class="container-subscribe">
+        <div class="container-subscribe-items">
+            <img src="./img/Group.png" alt="Subscribe">
+            <span class="subscribe">Suscríbete para más novedades</span>
         </div>
-        <div>
-            <img src="./img/Icono2.png" alt="Phone">
-            <h2>Teléfono</h2>
-            <p>Número de teléfono</p>
+        <div class="container-subscribe-items">
+            <input class="input-subs" type="email" placeholder="Ingresa tu correo electronico">
+            <button class="btn-subs">Suscribirme</button>
         </div>
-        <div>
-            <img src="./img/Icono3.png" alt="Email">
-            <h2>Correo Electrónico</h2>
-            <p>Dirección de correo</p>
+    </section>
+
+    <footer class="container-footer">
+        <div class="footer-background">
+            <div class="container-footer-info">
+                <div class="container-footer-img_text">
+                    <img src="./img/Icono.png" alt="Location">
+                    <div class="container-footer-text">
+                        <h2>Localidad</h2>
+                        <p>Calle - provincia</p>
+                    </div>
+                </div>
+                <div class="container-footer-img_text">
+                    <img src="./img/Icono2.png" alt="Phone">
+                    <div class="container-footer-text">
+                        <h2>Teléfono</h2>
+                        <p>Número de teléfono</p>
+                    </div>
+                </div>
+                <div class="container-footer-img_text">
+                    <img src="./img/Icono3.png" alt="Email">
+                    <div class="container-footer-text">
+                        <h2>Correo Electrónico</h2>
+                        <p>Dirección de correo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-footer-img">
+                <img src="./img/Logo2.png" alt="LogoPetShop">
+            </div>
+
         </div>
-        <img src="./img/Logo2.png" alt="LogoPetShop">
-        <p>Todos los derechos reservados Front End</p>
+        <p class="footer-all-reserved">Todos los derechos reservados Front End</p>
     </footer>
 
 </body>
