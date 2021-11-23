@@ -6,23 +6,54 @@
 }
 
 header {
-  position: fixed;
-  width: 100vw;
-  z-index: 10;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+textarea{
+  resize: none;
 }
 
 #header1 {
   background-color: #1cd1b0;
   font-size: 15px;
   font-weight: 400;
-  padding: 10px;
+  padding: 5px;
 }
+
 #header2 {
   background-color: #00669f;
   box-shadow: 0 10px 7px 0 rgb(0 0 0 / 25%);
+  padding: 28px;
+  color: white;
+  display: flex;
+}
+
+#header3 {
+  display: flex;
+  background-color: #001d2d;
+  color: white;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.register{
+  color: #00669F;
+}
+.header2-title {
   font-size: 40px;
   font-weight: 400;
-  padding: 28px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2vh;
+}
+
+.nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  width: 18%;
 }
 
 .titleCard {
@@ -32,7 +63,7 @@ header {
 }
 
 .paragraphCard {
-  margin: 10px;
+  margin: 20px;
 }
 
 .iconHeart {
@@ -43,13 +74,21 @@ header {
   left: 15px;
 }
 
+.container-contact2{
+  display: flex;
+  flex-direction: column;
+}
+.container-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .container-cards {
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
 }
 
 .formImg {
@@ -85,7 +124,7 @@ header {
   bottom: 20px;
 }
 
-a {
+a{
   text-decoration: none;
   color: white;
 }
@@ -96,11 +135,4 @@ footer {
   color: white;
   font-size: 16px;
   text-align: center;
-
-  z-index: 10;
-  position: fixed;
-  width: 100vw;
-  bottom: 0px;
-  right: 0px;
-  left: 0px;
 }
