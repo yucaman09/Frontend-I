@@ -68,6 +68,7 @@
   box-shadow: 0 0.3rem 0.3rem 0 rgb(0 0 0 / 25%);
   width: 18.7rem;
   position: relative;
+  margin-bottom: 3rem;
 }
 
 .iconHeart {
@@ -210,3 +211,99 @@
 }
 
 /* END INGRESAR/REGISTRO/CONTACTO */
+
+/* START MEDIA QUERIES */
+
+/* SMARTPHONE SMALL - BIG*/
+@media (min-width: 0px) and (max-width: 425px) {
+  .form-contact {
+    padding-top: 12rem;
+    padding-bottom: 9rem;
+  }
+
+  .container-contact {
+    width: 80%;
+  }
+
+  .container-contact h1 {
+    font-size: 2.5rem;
+  }
+
+  .container-contact label {
+    font-size: 1rem;
+  }
+
+  .container-cards {
+    padding-top: 14rem;
+    padding-bottom: 8rem;
+  }
+
+  .cards {
+    width: 16.7rem;
+  }
+
+  .cards-info span {
+    bottom: 1.2rem;
+  }
+
+  .cards-img {
+    width: 16.7rem;
+  }
+
+  .photo-profile {
+    width: 100px;
+  }
+
+  .add-card {
+    width: 50px;
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1rem;
+  }
+
+  .navigation {
+    justify-content: center;
+  }
+
+  .header-descuento {
+    text-align: center;
+  }
+}
+
+/* TABLET SMALL -BIG */
+@media (min-width: 426px) and (max-width: 768px) {
+  .add-card {
+    width: 75px;
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1rem;
+  }
+
+  .container-contact {
+    width: 50%;
+  }
+
+  .form-contact {
+    padding-top: 13rem;
+  }
+}
+
+/* LAPTOP, TABLET, NOTEBOOK */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .add-card {
+    width: 75px;
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1rem;
+  }
+  
+  .container-contact {
+    width: 45%;
+  }
+
+  .form-contact {
+    padding-top: 13rem;
+  }
+}
+
+/* END MEDIA QUERIES */
