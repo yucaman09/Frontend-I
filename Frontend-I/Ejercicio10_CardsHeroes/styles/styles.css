@@ -5,65 +5,69 @@
   font-family: "Roboto", sans-serif;
 }
 
-header {
-  position: sticky;
-  top: 0px;
+/* START HOME */
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   z-index: 2;
 }
 
-textarea{
-  resize: none;
-}
-
-#header1 {
+.header-descuento {
   background-color: #1cd1b0;
-  font-size: 15px;
+  font-size: 1rem;
   font-weight: 400;
-  padding: 5px;
+  padding: 0.3rem;
 }
 
-#header2 {
+.header-logo {
   background-color: #00669f;
-  box-shadow: 0 10px 7px 0 rgb(0 0 0 / 25%);
-  padding: 28px;
-  color: white;
+  padding: 1rem;
   display: flex;
 }
 
-#header3 {
-  display: flex;
-  background-color: #001d2d;
-  color: white;
-  justify-content: flex-end;
-  padding: 10px 20px;
-}
-
-.register{
-  color: #00669F;
-}
-.header2-title {
-  font-size: 40px;
+.header-title {
+  font-size: 2rem;
   font-weight: 400;
   margin-top: auto;
   margin-bottom: auto;
-  margin-left: 2vh;
+  margin-left: 2rem;
 }
 
-.nav {
+.header a {
+  text-decoration: none;
+  color: white;
+}
+
+.navigation {
+  background-color: #001d2d;
+  box-shadow: 0 0.3rem 0.5rem 0 rgb(0 0 0 / 25%);
+  padding: 0.7rem 1.5rem;
   display: flex;
-  list-style-type: none;
+  justify-content: flex-end;
+}
+
+.navigation ul li {
+  display: inline-block;
+  padding: 0rem 0.5rem;
+}
+
+.container-cards {
+  padding-top: 17rem;
+  padding-bottom: 9rem;
+  display: flex;
+  flex-flow: wrap;
   justify-content: space-around;
-  width: 18%;
+  align-items: center;
 }
 
-.titleCard {
-  text-align: center;
-  font-size: 25px;
-  text-transform: uppercase;
-}
-
-.paragraphCard {
-  margin: 20px;
+.cards {
+  background-color: rgba(243, 243, 243, 1);
+  box-shadow: 0 0.3rem 0.3rem 0 rgb(0 0 0 / 25%);
+  width: 18.7rem;
+  position: relative;
 }
 
 .iconHeart {
@@ -74,65 +78,135 @@ textarea{
   left: 15px;
 }
 
-.container-contact2{
-  display: flex;
-  flex-direction: column;
-}
-.container-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-cards {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.formImg {
+.photo-profile {
   border-radius: 50%;
   position: absolute;
-  left: 90px;
-  top: 133px;
+  left: 5.5rem;
+  top: 8.3rem;
 }
 
-.cards {
-  background-color: rgba(243, 243, 243, 1);
-  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
-  width: 300px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.cards-text {
+.cards-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 337px;
+  height: 21rem;
 }
 
-.button {
+.cards-info h3 {
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.cards-info p {
+  margin: 1rem;
+}
+
+.cards-info span {
   background-color: #00669f;
-  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
-  padding: 15px 37px;
+  padding: 1rem 2rem;
   position: absolute;
-  bottom: 20px;
+  bottom: 1.5rem;
 }
 
-a{
+.cards-info span a {
   text-decoration: none;
   color: white;
+  font-weight: 300;
 }
 
-footer {
+.footer {
   background-color: #00669f;
-  padding: 16px;
-  color: white;
-  font-size: 16px;
-  text-align: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
+
+.footer p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* END HOME */
+
+/* START INGRESAR/REGISTRO/CONTACTO */
+
+.form-contact {
+  padding-top: 16rem;
+  padding-bottom: 9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.container-contact h1 {
+  font-size: 3rem;
+  margin: 1rem 0rem;
+}
+
+.container-contact label {
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+}
+
+.container-contact input {
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 2px solid;
+}
+
+.container-contact select {
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 2px solid;
+}
+
+.container-contact textarea {
+  padding: 0.5rem;
+  border: 2px solid;
+  resize: none;
+}
+
+.container-contact div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.container-contact div input {
+  border: 0;
+  font-weight: 500;
+  border-radius: 20px;
+  width: 12rem;
+  font-size: 1rem;
+}
+
+.container-contact p {
+  text-align: center;
+  line-height: 5rem;
+}
+
+.container-contact p a {
+  color: #00669f;
+  text-decoration: none;
+}
+
+.btn-reset {
+  background-color: #888888;
+  color: white;
+}
+
+.btn-enter {
+  background-color: #1cd1b0;
+}
+
+/* END INGRESAR/REGISTRO/CONTACTO */

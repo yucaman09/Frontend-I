@@ -17,63 +17,61 @@
 </head>
 
 <body>
-    <header>
-        <h3 id="header1">20% de descuento en todos los productos!</h3>
-        <div id="header2">
+    <header class="header">
+        <h3 class="header-descuento">20% de descuento en todos los productos!</h3>
+        <div class="header-logo">
             <embed src="img/Logo.svg">
-            <h1 class="header2-title">
+            <h1 class="header-title">
                 <a href="index.html">
                     Nombre Tienda
                 </a>
             </h1>
         </div>
-        <div id="header3">
-            <ul class="nav">
-                <a href="contact.html">
-                    <li>Contacto</li>
-                </a>
-                <a href="sign-up.html">
-                    <li>Registrarme</li>
-                </a>
-                <a href="login.html">
-                    <li>Ingresar</li>
-                </a>
+        <nav class="navigation">
+            <ul>
+                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="sign-up.html">Registrarme</a></li>
+                <li><a href="login.html">Ingresar</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
 
-    <form class="container-contact" method="POST" action="">
-        <div class="container-contact2" > 
+    <form class="form-contact" method="POST" action="">
+        <div class="container-contact" > 
             <h1>Registro</h1>
 
             <label for="nombres_y_apellidos">Nombre y Apellido</label>
-            <input type="text" id="nombres_y_apellidos" name="nombres_y_apellidos">
+            <input type="text" id="nombres_y_apellidos" name="nombres_y_apellidos" placeholder="Ej. Juan Perez" required>
 
             <label for="email">Correo Electronico</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" placeholder="Ej. juan.perez@gmail.com" required>
             
             <label for="password">Contraseña</label>
-            <input type="password" id="password" name="password">
+            <input type="password" id="password" name="password" placeholder="Debe tener al menos 8 caracteres" required>
 
             <label for="pais">Pais</label>
-            <select name="pais" id="pais">
+            <select name="pais" id="pais" required>
                     <option value="Argentina">Argentina</option>
                     <option value="Colombia">Colombia</option>
                     <option value="Brasil">Brasil</option>
             </select>
             
-            <div class="container-contact">
-                <input type="reset" value="Resetear">
-                <input type="submit" value="Registrar">
+            <div>
+                <input class="btn-reset" type="reset" value="Resetear">
+                <input class="btn-enter" type="submit" value="Registrar">
             </div>
-            <p>¿Ya tenés una cuenta? <a href="login.html" class="register">Ingresá</a></p>
+            <p>¿Ya tenés una cuenta? <a href="login.html">Ingresa aqui</a></p>
         </div>
 
     </form>
 
 
 
-    <footer>Todos los derechos reservados a FRONT END 1</footer>
+    <footer class="footer">
+        <p>
+            Todos los derechos reservados a FRONT END 1
+        </p>
+    </footer>
 </body>
 
 </html>
