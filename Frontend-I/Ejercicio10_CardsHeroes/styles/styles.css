@@ -210,6 +210,14 @@
   background-color: #1cd1b0;
 }
 
+.animated-border-contact:hover{
+  border: 2px solid #1cd1b0;
+}
+
+.animated-border-register:focus{
+  border: 5px dotted #1cd1b0;
+}
+
 /* END INGRESAR/REGISTRO/CONTACTO */
 
 /* START MEDIA QUERIES */
