@@ -47,6 +47,15 @@ html {
   box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
+.btn-get-invert {
+  color: rgb(242, 95, 58);
+  background-color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 100px;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+}
+
 .header-container span {
   border-radius: 50px;
 }
@@ -66,8 +75,8 @@ html {
   color: #242e52;
 }
 
-.paragraph{
-  color: #B3B2B7;
+.paragraph {
+  color: #b3b2b7;
 }
 
 .container-info p {
@@ -86,8 +95,7 @@ html {
 
 .info-about {
   height: 14rem;
-  width: 22rem;
-  
+  width: 25rem;
 }
 
 .info-points {
@@ -100,7 +108,7 @@ html {
   background: #f3603b;
   border-radius: 30px;
   margin: 0px 23px;
-  padding: 10px 25px;;
+  padding: 10px 25px;
   color: white;
 }
 
@@ -109,6 +117,99 @@ html {
 }
 
 .container-info-about div h2 {
-  font-size: 2rem;
+  font-size: 2.3rem;
   letter-spacing: -0.035em;
+}
+
+.container-info-people {
+  height: 30rem;
+  text-align: center;
+  margin: 5rem;
+}
+
+.container-info-people h2 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+.photo-profile {
+  width: 70px;
+  position: absolute;
+  top: -2rem;
+}
+
+.cards h3 {
+  margin: 1rem 0rem;
+}
+
+.cards p {
+  margin: 0rem 1rem;
+}
+
+.container-cards {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.cards {
+  text-align: center;
+  align-items: center;
+  background-color: #fafafa;
+  width: 25rem;
+  height: 12rem;
+  justify-content: center;
+}
+
+.container-orange {
+  background-color: #f3603b;
+  padding: 5rem;
+  align-items: center;
+}
+
+.container-orange h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 3rem;
+  width: 40rem;
+}
+
+.container-footer {
+  align-items: center;
+  background-color: #1e1e26;
+  height: 14rem;
+}
+
+.container-icons {
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.nav-footer{
+  list-style-type: none;
+}
+
+.nav-footer li a{
+  color: white;
+  text-decoration: none;
+}
+
+.form-mail {
+  background: #ffffff;
+  border-radius: 50px;
+  border: none;
+  padding: 1rem;
+  width: 13rem;
+}
+
+.btn-go {
+  background: #f3603b;
+  border-radius: 50px;
+  border: none;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+.copyright{
+  font-size: 0.8rem;
+  color: #8C8C94;
 }
