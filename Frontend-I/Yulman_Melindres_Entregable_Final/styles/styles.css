@@ -62,8 +62,12 @@ html {
   letter-spacing: -0.2rem;
 }
 
-.title-subtitle{
+.title-subtitle {
   color: #242e52;
+}
+
+.paragraph{
+  color: #B3B2B7;
 }
 
 .container-info p {
@@ -80,24 +84,27 @@ html {
   height: 30rem;
 }
 
-.info-about{
+.info-about {
   height: 14rem;
-  width: 50%;
+  width: 22rem;
+  
 }
 
-.info-points{
-  width: 50%;
+.info-points {
+  width: 35rem;
   height: 100%;
 }
 
-.info-points-number{
+.info-points-number {
   align-self: flex-start;
+  background: #f3603b;
+  border-radius: 30px;
+  margin: 0px 23px;
+  padding: 10px 25px;;
+  color: white;
 }
 
-.info-points-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.info-points-content {
   height: 8rem;
 }
 
@@ -105,4 +112,3 @@ html {
   font-size: 2rem;
   letter-spacing: -0.035em;
 }
-
