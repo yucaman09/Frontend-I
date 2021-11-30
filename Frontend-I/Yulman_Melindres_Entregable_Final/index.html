@@ -131,7 +131,7 @@
     </section>
 
     <footer class="row container-footer">
-        <div>
+        <div class="column ">
             <img src="img/LogoWhite.svg" alt="">
             <ul class="row container-icons">
                 <li><a href=""><img src="img/icon-facebook.svg" alt=""></a></li>
@@ -142,19 +142,26 @@
             </ul>
         </div>
         
-        <ul class="nav-footer">
-            <li> <a href="">Home</a> </li>
-            <li> <a href="">Pricing</a> </li>
-            <li> <a href="">Products</a> </li>
-            <li> <a href="">About Us</a> </li>
-            <li> <a href="">Careers</a> </li>
-            <li> <a href="">Community</a> </li>
-            <li> <a href="">Privacy Policy</a> </li>
-        </ul>
+        <nav class="row container-nav-footer">
+            <ul class="nav-footer column">
+                <li> <a href="">Home</a> </li>
+                <li> <a href="">Pricing</a> </li>
+                <li> <a href="">Products</a> </li>
+                <li> <a href="">About Us</a> </li>
+            </ul>
 
-        <form action="" method="POST">
-            <input class="form-mail" type="text" placeholder="Update in your inbox...">
-            <input class="btn-go" type="submit" value="Go">
+            <ul class="nav-footer column">
+                <li> <a href="">Careers</a> </li>
+                <li> <a href="">Community</a> </li>
+                <li> <a href="">Privacy Policy</a> </li>
+            </ul>
+        </nav>
+
+        <form action="" method="POST" class="column">
+            <div>
+                <input class="form-mail" type="text" placeholder="Update in your inbox...">
+                <input class="btn-go" type="submit" value="Go">
+            </div>
             <p class="copyright">Copyright 2020. All Rights Reserved</p>
         </form>
 

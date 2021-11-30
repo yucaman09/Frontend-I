@@ -179,16 +179,22 @@ html {
   height: 14rem;
 }
 
+.container-footer div{
+  height: 10rem;
+}
+
 .container-icons {
   list-style-type: none;
   flex-wrap: wrap;
 }
 
-.nav-footer{
+.nav-footer {
   list-style-type: none;
+  justify-content: start;
+  gap: 1rem;
 }
 
-.nav-footer li a{
+.nav-footer li a {
   color: white;
   text-decoration: none;
 }
@@ -209,7 +215,26 @@ html {
   color: white;
 }
 
-.copyright{
+.copyright {
   font-size: 0.8rem;
-  color: #8C8C94;
+  color: #8c8c94;
+}
+
+.container-nav-footer {
+  width: 25rem;
+  height: 8rem;
+  justify-content: space-between;
+}
+
+.container-footer form{
+  height: 8rem;
+}
+
+.container-footer form p{
+  text-align: right;
+}
+
+
+@media (min-width: 0px) and (max-width: 375px){
+
 }
