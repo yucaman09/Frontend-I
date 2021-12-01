@@ -27,12 +27,9 @@ html {
   flex-wrap: wrap-reverse;
 }
 
-.container nav {
-  width: 30rem;
-}
-
 .no-symbols {
   list-style-type: none;
+  gap: 1rem;
 }
 
 .no-symbols li a {
@@ -82,7 +79,7 @@ html {
 }
 
 .container-title {
-  height: 24rem;
+  gap: 2rem;
   width: 30rem;
 }
 
@@ -92,12 +89,12 @@ html {
 }
 
 .graphic {
-  width: 36.3rem;
+  width: 580px;
 }
 
 .container-title-2 {
   margin: 5rem;
-  height: 30rem;
+  flex-flow: wrap;
 }
 
 .info-about {
@@ -107,7 +104,7 @@ html {
 
 .container-list {
   width: 35rem;
-  height: 100%;
+  gap: 2rem;
 }
 
 .number {
@@ -132,6 +129,7 @@ html {
 .container-cards {
   position: relative;
   margin-top: 3rem;
+  flex-flow: wrap;
 }
 
 .photo-profile {
@@ -174,6 +172,7 @@ html {
   align-items: center;
   background-color: #1e1e26;
   padding: 3rem;
+  flex-flow: wrap-reverse;
 }
 
 .container-footer div {
@@ -226,4 +225,8 @@ html {
 }
 
 @media (min-width: 0px) and (max-width: 375px) {
+
+  .graphic{
+    width: 350px;
+  }
 }
