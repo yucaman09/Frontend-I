@@ -9,11 +9,15 @@ html {
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
-.background {
+/* Fondos */
+.background{
   background-image: url(/img/bg-tablet-pattern.svg);
   background-position: top right;
   background-repeat: repeat-y;
 }
+
+
+/* Display flex */
 
 .column {
   display: flex;
@@ -27,6 +31,8 @@ html {
   justify-content: space-around;
 }
 
+/*Todo el estilo del body*/
+
 .container {
   margin: 5rem;
   align-items: center;
@@ -38,16 +44,17 @@ html {
   gap: 1rem;
 }
 
-.no-symbols-icons{
+.no-symbols-icons {
   list-style-type: none;
   gap: 1rem;
 }
 
-.no-symbols-icons li{
+.no-symbols-icons li {
   color: white;
   font-size: 20px;
 }
-.no-symbols-icons li:hover{
+
+.no-symbols-icons li:hover {
   color: #f3603b;
 }
 
@@ -81,6 +88,7 @@ html {
 
 .paragraph {
   color: #b3b2b7;
+  line-height: 2rem;
 }
 
 .btn-get {
@@ -142,13 +150,26 @@ html {
   align-self: flex-start;
   background: #f3603b;
   border-radius: 30px;
-  margin: 0px 23px;
   padding: 10px 25px;
   color: white;
 }
 
+.separed {
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.size {
+  width: 80%;
+}
+
+.separed2 {
+  gap: 2rem;
+}
+
 .item {
-  height: 8rem;
+  align-items: flex-end;
 }
 
 .container-list-people {
@@ -174,7 +195,7 @@ html {
   align-items: center;
   background-color: #fafafa;
   width: 25rem;
-  height: 14rem;
+  height: 17rem;
   justify-content: center;
 }
 
@@ -229,7 +250,7 @@ html {
   gap: 1rem;
 }
 
-.list-footer li a:hover{
+.list-footer li a:hover {
   color: #f3603b;
 }
 
@@ -247,7 +268,7 @@ html {
   outline: none;
 }
 
-.ipt-mail:focus{
+.ipt-mail:focus {
   border: 1px solid #f3603b;
   color: #f3603b;
 }
@@ -260,7 +281,7 @@ html {
   color: white;
 }
 
-.btn-go:hover{
+.btn-go:hover {
   opacity: 25%;
   cursor: pointer;
 }
@@ -270,8 +291,155 @@ html {
   color: #8c8c94;
 }
 
+.list-circle {
+  display: none;
+}
+
+
+/* Responsive design mobile */
+
 @media (min-width: 0px) and (max-width: 375px) {
   .graphic {
     width: 350px;
+  }
+
+  .container-footer div {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .container-footer div img {
+    width: 150px;
+  }
+
+  .container-footer::before {
+    content: "Copyright 2020. All Rights Reserved";
+    color: #b3b2b7;
+    text-align: center;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .no-symbols-icons li {
+    font-size: 30px;
+  }
+
+  .no-symbols-icons {
+    gap: 2rem;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .container-footer form {
+    height: 5rem;
+  }
+
+  .container-pre-footer {
+    flex-direction: column;
+  }
+
+  .container-pre-footer h1 {
+    font-size: 3rem;
+    text-align: center;
+    width: 20rem;
+    margin-bottom: 3rem;
+  }
+
+  #card-1 {
+    display: none;
+  }
+
+  #card-3 {
+    display: none;
+  }
+
+  #get1 {
+    display: none;
+  }
+
+  .container-list-people {
+    width: 20rem;
+    margin: 2rem;
+    height: 40rem;
+  }
+
+  .container-title-2 {
+    margin: 5rem 2rem;
+    text-align: center;
+  }
+
+  .container-title {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .container-list {
+    flex-wrap: wrap;
+  }
+
+  .cards {
+    height: 19rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    width: 20rem;
+    text-align: center;
+  }
+
+  .size {
+    text-align: left;
+    width: 100%;
+  }
+
+  .number {
+    padding: 17px 29px;
+  }
+
+  .franja {
+    background-color: rgba(243, 95, 59, 0.2);
+    border-radius: 29px 0px 0px 29px;
+  }
+
+  .info-about {
+    gap: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  .list-circle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin: 3rem 0rem;
+  }
+
+  .circleFill {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f3603b;
+  }
+
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #f3603b;
+  }
+
+  .container-list-people span {
+    margin-bottom: 5rem;
+  }
+
+  .no-symbols {
+    display: none;
+  }
+
+  .container {
+    margin: 2rem;
+    justify-content: start;
   }
 }

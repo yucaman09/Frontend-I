@@ -15,6 +15,7 @@
 </head>
 
 <body class="background">
+    <!-- Navegacion del header y logo -->
     <header class="row container">
         <img src="/img/logo.svg" alt="Manage">
         <nav>
@@ -26,9 +27,9 @@
                 <li> <a href="">Community</a> </li>
             </ul>
         </nav>
-        <a class="btn-get" href="#">Get Started</a>
+        <a class="btn-get" href="#" id="get1">Get Started</a>
     </header>
-
+    <!-- Titulo principal y graficas -->
     <section class="row container">
         <div class="column container-title">
             <h1 class="title">Bring everyone
@@ -43,7 +44,7 @@
         </div>
         <img class="graphic" src="img/illustration-intro.svg" alt="statistic">
     </section>
-
+    <!-- Diferencias principales -->
     <section class="row container-title-2">
         <div class="column info-about">
             <h2 class="subtitle">What´s different about
@@ -57,37 +58,37 @@
         </div>
 
         <div class="column container-list">
-            <div class="row">
-                <div class="number">
-                    <span>01</span>
+            <div class="column separed2">
+                <div class="row separed franja">
+                    <span class="number">01</span>
+                    <h3 class="subtitle2 size">Track company-wide progress</h3>
                 </div>
                 <div class="column item">
-                    <h3 class="subtitle2">Track company-wide progress</h3>
-                    <p class="paragraph">See how your day-to-day tasks fit into the wider vision.
+                    <p class="paragraph size">See how your day-to-day tasks fit into the wider vision.
                         Go from tracking progress at the milestone level all the
                         way done to the smallest of details. Never lose sight of
                         the bigger picture again.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="number">
-                    <span>02</span>
+            <div class="column separed2">
+                <div class="row separed franja">
+                    <span class="number">02</span>
+                    <h3 class="subtitle2 size">Advance built-in reports</h3>
                 </div>
                 <div class="column item">
-                    <h3 class="subtitle2">Advance built-in reports</h3>
-                    <p class="paragraph">Set internal delivery estimates and track progress toward
+                    <p class="paragraph size">Set internal delivery estimates and track progress toward
                         company goals. Our customisable dashboard helps you
                         build out the reports you need to keep key stakeholders
                         informed.</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="number">
-                    <span>03</span>
+            <div class="column separed2">
+                <div class="row separed franja">
+                    <span class="number">03</span>
+                    <h3 class="subtitle2 size">Everything you need in one place</h3>
                 </div>
                 <div class="column item">
-                    <h3 class="subtitle2">Everything you need in one place</h3>
-                    <p class="paragraph">Stop jumping from one service to another to
+                    <p class="paragraph size">Stop jumping from one service to another to
                         communicate, store files, track tasks and share
                         documents. Manage offers an all-in-one team
                         productivity solution.</p>
@@ -97,25 +98,25 @@
         </div>
 
     </section>
-
+    <!-- Personas que conocen la marca, tarjetas -->
     <section class="column container-list-people">
         <h2 class="subtitle">What they´ve said</h2>
         <div class="row container-cards">
-            <div class="column cards">
+            <div class="column cards" id="card-1">
                 <img class="photo-profile" src="img/avatar-anisha.png" alt="Anisha Li">
                 <h3 class="subtitle2">Anisha Li</h3>
                 <p class="paragraph">“Manage has supercharged our team´s workflow. The ability to maintain visibility on
                     larger milestones
                     at all times keeps everyone motivated.”</p>
             </div>
-            <div class="column cards">
+            <div class="column cards" id="card-2">
                 <img class="photo-profile" src="img/avatar-ali.png" alt="Ali Bravo">
                 <h3 class="subtitle2">Ali Bravo</h3>
                 <p class="paragraph">“We have been able to cancel so many other subscriptions since using manage. There
                     ir no more
                     cross-channel confusion and everyone is much more focused.”</p>
             </div>
-            <div class="column cards">
+            <div class="column cards" id="card-3">
                 <img class="photo-profile" src="img/avatar-richard.png" alt="Richard Watts">
                 <h3 class="subtitle2">Richard Watts</h3>
                 <p class="paragraph">“Manage allows us to provide structure and process. It keeps us organized and
@@ -123,14 +124,20 @@
                     recommending them to everyone i talk to!”</p>
             </div>
         </div>
+        <div class="list-circle">
+            <div class="circle"></div>
+            <div class="circleFill"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
         <span><a class="btn-get" href="#">Get Started</span></a>
     </section>
-
+    <!-- Titulo secundario -->
     <section class="row container-pre-footer">
-        <h1>Simplify how your team words today.</h1>
+        <h1>Simplify how your team works today.</h1>
         <span><a class="btn-get-invert" href="#">Get Started</span></a>
     </section>
-
+    <!-- Navegacion del footer, redes sociales y formulario -->
     <footer class="row container-footer">
         <div class="column ">
             <img src="img/LogoWhite.svg" alt="">
@@ -160,14 +167,14 @@
 
         <form action="" method="POST" class="column">
             <div>
-                <input class="ipt-mail" type="email" placeholder="Update in your inbox...">
+                <!-- <label for="email" id="update_Email">Email:</label> -->
+                <input class="ipt-mail" type="email" name="email" id="email" placeholder="Update in your inbox...">
                 <input class="btn-go" type="submit" value="Go">
             </div>
             <p class="copyright">Copyright 2020. All Rights Reserved</p>
         </form>
 
     </footer>
-
 </body>
 
 </html>
